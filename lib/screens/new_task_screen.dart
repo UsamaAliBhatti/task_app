@@ -15,7 +15,9 @@ class NewTaskScreen extends StatelessWidget {
         bottomNavigationBar: Padding(
           padding: const EdgeInsets.all(20.0),
           child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                provider.createTask(context);
+              },
               child: const Padding(
                   padding: EdgeInsets.all(20),
                   child: Text(
